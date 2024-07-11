@@ -202,13 +202,7 @@ $utilities: map-merge(
       property: width,
       responsive: true,
       class: w,
-      values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto,
-      ),
+      values: $custom-spacer,
     ),
     "max-width": (
       property: max-width,
@@ -231,13 +225,7 @@ $utilities: map-merge(
       property: height,
       responsive: true,
       class: h,
-      values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
-        auto: auto,
-      ),
+      values: $custom-spacer,
     ),
     "max-height": (
       property: max-height,

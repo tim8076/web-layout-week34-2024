@@ -351,7 +351,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false; //true !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -382,8 +382,9 @@ $spacers: (
     0: 0,
   1: $spacer * 0.25,  // 4
   2: $spacer * 0.5,   // 8
-  r1: $spacer * 0.625, // 10
+  r2: $spacer * 0.625, // 10
   3: $spacer * 0.75,  // 12
+  r3: $spacer * 0.9375, // 15
   4: $spacer,         // 16
   5: $spacer * 1.25,  // 20
   6: $spacer * 1.5,   // 24
@@ -423,6 +424,15 @@ $spacers: (
   40: $spacer * 10    // 160
 ) !default;
 // scss-docs-end spacer-variables-maps
+
+$custom-spacer: (
+  787p: 787px,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto,
+);
 
 // Position
 //
