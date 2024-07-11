@@ -1,3 +1,28 @@
-.index-title {
-  font-size: 100px;
+.index-banner {
+  background-image: url('../images/home-header-sm.png');
+  @include media-breakpoint-up(lg) {
+    background-image: url('../images/home-header.png');
+  }
+}
+
+.index-design-glassess {
+  background-image: url('../images/index-bg-sm.png');
+  @include media-breakpoint-up(md) {
+    background-image: url('../images/index-bg-md.png');
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url('../images/index-bg.png');
+  }
+  .img-area-1 {
+    background-image: url('../images/home-section4-1-sm.png');
+    @include media-breakpoint-up(md) {
+      background-image: url('../images/home-section4-1.png');
+    }
+  }
+  .img-area-2 {
+    background-image: url('../images/home-section4-2-sm.png');
+    @include media-breakpoint-up(md) {
+      background-image: url('../images/home-section4-2.png');
+    }
+  }
 }

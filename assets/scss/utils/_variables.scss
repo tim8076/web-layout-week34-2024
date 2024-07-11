@@ -299,11 +299,14 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       #aa0601; //$blue !default;
+$primary-100:   #650300;
 $secondary:     #fbf2f2; //$gray-600 !default;
 $third:         #B75929;
 $third-100:     #5F3E2D;
 $dark:          #000;    //$gray-900 !default;
 $light:         #fff;    //$gray-100 !default;
+$light-100:     #DEE2E6;
+$light-200:     #707070;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -315,9 +318,12 @@ $danger:        $red !default;
 // scss-docs-start theme-colors-map
 $theme-colors: (
   "primary":    $primary,
+  "primary-100": $primary-100,
   "secondary":  $secondary,
   "third":      $third,
   "third-100":  $third-100,
+  "light-100":  $light-100,
+  "light-200":  $light-200,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -426,6 +432,12 @@ $spacers: (
 // scss-docs-end spacer-variables-maps
 
 $custom-spacer: (
+  100p: 100px,
+  136p: 136px,
+  205p: 205px,
+  240p: 240px,
+  306p: 306px,
+  396p: 396px,
   787p: 787px,
   25: 25%,
   50: 50%,
@@ -553,7 +565,7 @@ $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow:                  0px 2px 6px #00000029; //0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
@@ -617,6 +629,7 @@ $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
+$font-weight-black:           900 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
@@ -651,7 +664,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.5; //1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
@@ -885,13 +898,13 @@ $input-padding-y-lg:                    $input-btn-padding-y-lg !default;
 $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 
-$input-bg:                              $body-bg !default;
+$input-bg:                              #FBF2F2; //$body-bg !default;
 $input-disabled-color:                  null !default;
 $input-disabled-bg:                     $gray-200 !default;
 $input-disabled-border-color:           null !default;
 
 $input-color:                           $body-color !default;
-$input-border-color:                    $gray-400 !default;
+$input-border-color:                    #000; //$gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
@@ -905,7 +918,7 @@ $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               rgba(0, 0, 0, .2); //$gray-600 !default;
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
