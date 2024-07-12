@@ -438,6 +438,7 @@ $custom-spacer: (
   136p: 136px,
   205p: 205px,
   240p: 240px,
+  296p: 296px,
   306p: 306px,
   396p: 396px,
   787p: 787px,
@@ -629,6 +630,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
 $font-weight-semibold:        600 !default;
 $font-weight-bold:            700 !default;
 $font-weight-black:           900 !default;
@@ -654,6 +656,7 @@ $font-sizes: (
   2: 3rem,      // 48px,
   3: 2.625rem,  // 42px,
   4: 2.25rem,   // 36px,
+  45: 2rem,    // 32px,
   5: 1.5rem,    // 24px,
   6: 1.25rem,   // 20px,
   7: 1rem,      // 16px,
@@ -1263,28 +1266,28 @@ $pagination-padding-x:              .75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
 $pagination-padding-y-lg:           .75rem !default;
-$pagination-padding-x-lg:           1.5rem !default;
+$pagination-padding-x-lg:           1rem !default;
 
 $pagination-font-size:              $font-size-base !default;
 
-$pagination-color:                  var(--#{$prefix}link-color) !default;
+$pagination-color:                  #555; //var(--#{$prefix}link-color) !default;
 $pagination-bg:                     $white !default;
 $pagination-border-radius:          $border-radius !default;
 $pagination-border-width:           $border-width !default;
 $pagination-margin-start:           ($pagination-border-width * -1) !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           #555; //$gray-300 !default;
 
-$pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-focus-bg:               $gray-200 !default;
-$pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
+$pagination-focus-color:            #555; //var(--#{$prefix}link-hover-color) !default;
+$pagination-focus-bg:               #F2F2F2; //$gray-200 !default;
+$pagination-focus-box-shadow:       none; //$input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            #555; //var(--#{$prefix}link-hover-color) !default;
+$pagination-hover-bg:               #F2F2F2; //$gray-200 !default;
+$pagination-hover-border-color:     #555; //$gray-300 !default;
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
+$pagination-active-color:           #fff; //$component-active-color !default;
+$pagination-active-bg:              #000; //$component-active-bg !default;
 $pagination-active-border-color:    $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;

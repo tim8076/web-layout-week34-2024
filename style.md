@@ -11,9 +11,14 @@ fs-8: 14px
 ## colors
 ``` scss
 $primary:       #aa0601; //$blue !default;
+$primary-100:   #650300;
 $secondary:     #fbf2f2; //$gray-600 !default;
+$third:         #B75929;
+$third-100:     #5F3E2D;
 $dark:          #000;    //$gray-900 !default;
-$light:         #fff; //$gray-100 !default;
+$light:         #fff;    //$gray-100 !default;
+$light-100:     #DEE2E6;
+$light-200:     #707070;
 ```
 
 ## grid

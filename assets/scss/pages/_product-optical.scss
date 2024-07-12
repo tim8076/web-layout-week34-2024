@@ -1,0 +1,32 @@
+.product-banner {
+  .bg-1 {
+    background-image: url('../images/product-header-sm-1.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('../images/product-header-1.png');
+    }
+  }
+  .bg-2 {
+    background-image: url('../images/product-header-sm-2.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('../images/product-header-2.png');
+    }
+  }
+  .bg-3 {
+    background-image: url('../images/product-header-sm-3.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('../images/product-header-3.png');
+    }
+  }
+  .bg-4 {
+    background-image: url('../images/product-header-sm-4.png');
+    @include media-breakpoint-up(lg) {
+      background-image: url('../images/product-header-4.png');
+    }
+  }
+}
+
+.product-list {
+  li:hover img {
+    transform: scale(1.2);
+  }
+}
