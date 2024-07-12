@@ -5,6 +5,12 @@
   }
 }
 
+.index-glassess {
+  li:hover img{
+    transform: scale(1.2);
+  }
+}
+
 .index-design-glassess {
   background-image: url('../images/index-bg-sm.png');
   @include media-breakpoint-up(md) {
@@ -13,6 +19,12 @@
   @include media-breakpoint-up(lg) {
     background-image: url('../images/index-bg.png');
   }
+
+  li:hover .img-area-1,
+  li:hover .img-area-2{
+    transform: scale(1.2);
+  }
+
   .img-area-1 {
     background-image: url('../images/home-section4-1-sm.png');
     @include media-breakpoint-up(md) {

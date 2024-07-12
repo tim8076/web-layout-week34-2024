@@ -126,6 +126,14 @@ $utilities: map-merge(
         y: translateY(-50%),
       )
     ),
+    "translate-y": (
+      property: transform,
+      class: translate-y,
+      state: hover,
+      values: (
+        n5: translateY(-5%),
+      )
+    ),
     // scss-docs-end utils-position
     // scss-docs-start utils-borders
     "border": (
