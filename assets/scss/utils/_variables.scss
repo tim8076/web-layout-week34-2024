@@ -308,6 +308,7 @@ $dark:          #000;    //$gray-900 !default;
 $light:         #fff;    //$gray-100 !default;
 $light-100:     #DEE2E6;
 $light-200:     #707070;
+$light-300:     #555;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -326,6 +327,7 @@ $theme-colors: (
   "third-100":  $third-100,
   "light-100":  $light-100,
   "light-200":  $light-200,
+  "light-300":  $light-300,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -445,6 +447,7 @@ $custom-spacer: (
   296p: 296px,
   306p: 306px,
   396p: 396px,
+  400p: 400px,
   414p: 414px,
   787p: 787px,
   25: 25%,
