@@ -10,6 +10,24 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <nav class="bg-primary-100 d-none d-md-block">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center py-4">
+          <ul class="list-unstyled mb-0 d-flex align-items-center flex-shrink-0">
+            <li class="me-12"><a href="#" class="fs-6">最新消息</a></li>
+            <li class="me-12"><a href="#" class="fs-6">特別企劃</a></li>
+            <li class="me-12"><a href="#" class="fs-6">新品上市</a></li>
+            <li><a href="#" class="fs-6">鏡框小知識</a></li>
+          </ul>
+          <div class="input-group w-auto" data-search-group>
+            <span class="material-symbols-outlined input-group-text fs-45 lh-1 bg-transparent border-0 cursor-pointer text-light" data-search-btn>
+              search
+            </span>
+            <input type="text" class="form-control py-0 fs-6 py-0 d-none" data-search-input>
+          </div>
+        </div>
+      </div>
+    </nav>
     <main>
       <section class="pt-10 pb-16 py-md-20 pt-lg-24">
         <div class="container">
@@ -118,10 +136,47 @@
               </div>
             </li>
           </ul>
+          <nav>
+            <ul class="pagination pagination-lg justify-content-center mb-0">
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6" href="#">上一頁</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6 active" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6" href="#">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6" href="#">5</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link px-3 px-md-4 fs-7 fs-md-6" href="#">下一頁</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
     </main>
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
+    <script>
+      const search = document.querySelector('[data-search-group]');
+      const searchBtn = document.querySelector('[data-search-btn]');
+      const searchInput = document.querySelector('[data-search-input]');
+      
+      searchBtn.addEventListener('click', function() {
+        search.classList.toggle('w-auto');
+        search.classList.toggle('w-25');
+        searchInput.classList.toggle('d-none');
+        searchInput.classList.toggle('d-block');
+      })
+    </script>
   </body>
 </html>
