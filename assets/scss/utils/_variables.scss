@@ -446,9 +446,11 @@ $custom-spacer: (
   240p: 240px,
   296p: 296px,
   306p: 306px,
+  320p: 320px,
   396p: 396px,
   400p: 400px,
   414p: 414px,
+  520p: 520px,
   787p: 787px,
   25: 25%,
   50: 50%,
@@ -1606,14 +1608,14 @@ $figure-caption-color:              $gray-600 !default;
 // Breadcrumbs
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size:              null !default;
+$breadcrumb-font-size:              1rem; //null !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
-$breadcrumb-item-padding-x:         .5rem !default;
+$breadcrumb-item-padding-x:         .25rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          $gray-600 !default;
-$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-active-color:           #aa0601; //$gray-600 !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
