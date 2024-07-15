@@ -1,4 +1,8 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  .social-links img{
+    transition: all 250ms ease-in-out;
+    &:hover {
+      scale: (1.2);
+    }
+  }
 }
